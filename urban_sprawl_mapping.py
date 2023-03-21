@@ -29,6 +29,8 @@ else:
   joined.to_file(joined_file, driver='GeoJSON')
 
 
+pandas_bokeh.output_file('index.html')
+
 joined.plot_bokeh(
   dropdown=joined_cols[-1:],
   tile_provider='STAMEN_TONER',
