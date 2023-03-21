@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "urban-sprawl-mapping"
+version = "0.1.0"
+description = "Mapping data from \"Measuring Urban Sprawl and Validating Sprawl Measures\" by Ewing & Hamidi"
+authors = ["Tim Vergenz <vergenzt@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "urban_sprawl_mapping"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^1.5.3"
+geopandas = "^0.12.2"
+pandas-bokeh = {git = "https://github.com/PatrikHlobil/Pandas-Bokeh"}
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.11.0"
+ipdb = "^0.13.13"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
